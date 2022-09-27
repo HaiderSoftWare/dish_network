@@ -9,7 +9,7 @@ class MyMiddleWare extends GetMiddleware {
 
   @override
   RouteSettings? redirect(String? route) {
-    if (checkUser.read('uder') != null) {
+    if (checkUser.read('login') != null) {
       return const RouteSettings(name: '/home');
     }
   }
